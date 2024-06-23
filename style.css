@@ -1,0 +1,41 @@
+body {
+   background: rgb(220, 220,220);
+   min-height:97vh;
+}
+
+body, .box, .inner-box {
+   display:flex;
+   justify-content: center;
+   align-items:center;
+}
+
+.all {
+   width:470px;
+   height:470px;
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 45px;
+   row-gap:45px;
+}
+.box .inner-box img {
+   width:90px;
+}
+
+.box {
+   width:200px;
+   height:200px;
+   background-color:white;
+   margin:auto;
+   box-shadow:inset 8px 8px 20px rgb(150,150,150),
+                     1px 1px 1px white;
+   border-radius: 30%;
+}
+
+.box .inner-box {
+   width:160px;
+   height:160px;
+   background: rgb(220, 220,220);
+   border-radius: 30%;
+   box-shadow: 8px 8px 20px rgb(150,150,150),
+               inset  1px 1px 1px white;
+}
